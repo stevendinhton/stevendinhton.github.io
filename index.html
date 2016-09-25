@@ -1,34 +1,236 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Iron Dome</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <script src="TemplateData/UnityProgress.js"></script>
-  </head>
-  <body class="template">
-    <p class="header"><span>Unity WebGL Player | </span>Iron Dome</p>
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Iron Dome</div>
-    </div>
-    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "Release/9webgl.data",
-    codeUrl: "Release/9webgl.js",
-    memUrl: "Release/9webgl.mem",
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>Bootstrap 101 Template</title>
 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	
+	<style>
+	body{
+		font-family: 'Merriweather';
+		font-size:15px;
+		background-color:#505050;
+	}
+	div.col-lg-8{
+		padding: 0px;
+		margin-left: 0px;
+	}
+	
+	div.col-lg-4{
+		padding: 0px;
+		margin-left: 0px;
+		text-align:right;
+	}
+	h1{
+		font-size:50px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+	}
+	h2{
+		font-size:25px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+		line-height:0px;
+	}
+	h3{
+		font-size:20px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+	}
+	
+	header{
+		background-color:#F0F0F0;
+	}
+	.container{
+		padding:0px;
+	}
+	.page-header{
+		color:#505050;
+		margin-top:0px;
+		padding-left:18px;
+		padding-right:18px;
+	}
+	.section{
+		background-color:#F7F7F7;
+		padding:20px
+	}
+	.progress{
+		margin-bottom:10px;
+		background-color:#E0E0E0;
+	}
+	.progress-bar{
+		background-color:#303030;
+	}
+	.btn{
+		background-color:#303030;
+		color:white;
+	}
+	.btn:hover, .btn:active, .btn:focus{
+		background-color:#505050;
+		color:white;
+	}
+	</style>
+    
+  </head>
+  <body>
+	<header class="header">
+	<div class="container">
+	
+    <div class="page-header">
+		
+		<h1>Steven Dinhton Nguyen</h1>
+		
+		<div class="col-lg-8">
+		Undergrad student at the University of Waterloo
+		</div>
+		
+		<div class="col-lg-4">
+		<a href="documents\stevendinhton.pdf" class="btn btn-default" role="button">
+		<span class="glyphicon glyphicon-file"></span>
+		&nbsp;download resume
+		</a>
+		</div>
+		
+		<br>
+		
+	</div>
+	</div>
+	</header>
+	
+	
+	<br>
+	<div class="container" width="500px">
+	<div class="col-md-8">
+	
+	<!-- ABOUT ME -->
+	<div class="section">
+		<h2><span class="glyphicon glyphicon-user"></span>&nbsp;ABOUT ME</h2>
+		Hi, I'm Steven. I'm a student studying Geomatics and Computer Science at the University of Waterloo. I was born in Windsor, Ontario and grew up in Mississauga, Ontario. I spend my spare time working on programming and GIS-related projects.
+		<br>
+		<h3>
+		University of Waterloo (2015 - present)
+		</h3>
+		Honours Geomatics co-op, Computer Science Minor
+	</div>
+	
+	<br>
+	
+	<!-- RECENT PROJECTS -->
+	<div class="section">
+		<h2><span class="glyphicon glyphicon-blackboard"></span>&nbsp;RECENT PROJECTS</h2>
+		
+		<div class="content">
+		<div class="col-md-5" style="padding:0px;"><img src="images/missiletap.png"></img></div>
+		
+		<h3>MISSILE TAP</h3>
+		Missile Tap is a small game about shooting down missiles using your own missiles. This was developed in Unity and coded with C#. This game was inspired by Missile Command, an old arcade game. I disabled losing for the web version of this game.
+		<br><br>
+		Left click to launch interceptor missiles. Avoid enemy (red) missiles from landing.
+		<br><br>
+		
+		<a href="game.html" class="btn">View project</a>
+		<br><br><br><br><br><br>
+		
+		</div>
+		
+	</div>
+	
+	</div>
+	
+	<div class="col-md-4">
+	
+	<!-- CONTACT SECTION -->
+	<div class="section">
+		<h2><span class="glyphicon glyphicon-envelope"></span>&nbsp;CONTACT ME</h2>
+		email: stevendinhton@gmail.com
+	</div>
+	
+	<br>
+	
+	<!-- SKILLS SECTION -->
+	<div class="section">
+		<h2><span class="glyphicon glyphicon-wrench"></span>&nbsp;SKILLS</h2>
+		<h3>Software Development:</h3>
+		Java
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+		</div>
+		</div>
+		
+		C / C++
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+		</div>
+		</div>
+		
+		Racket / Scheme
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+		</div>
+		</div>
+		
+		Python
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+		</div>
+		</div>
+		
+		C#
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style="width: 46%;">
+		</div>
+		</div>
+		
+		HTML
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" style="width: 42%;">
+		</div>
+		</div>
+		
+		<h3>Geomatics:</h3>
+		
+		ArcGIS
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%;">
+		</div>
+		</div>
+		
+		Cartography / Map Design
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+		</div>
+		</div>
+		
+		<h3>Other:</h3>
+		
+		Adobe Photoshop
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style="width: 94%;">
+		</div>
+		</div>
+		
+		Microsoft Word / Excel / Powerpoint
+		<div class="progress">
+		<div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;">
+		</div>
+		</div>
+		
+	</div>
+	</div>
+	
+	
+	
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</div>
   </body>
 </html>

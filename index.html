@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
 	
 	<link rel="icon" href="images\favicon.png">
 	
@@ -23,9 +25,9 @@
 		color:#303030;
 	}
 	body{
-		font-family: 'Merriweather';
+		font-family: 'PT Serif', serif;
 		font-size:15px;
-		background-color:#4b5466;
+		background-color:#404040;
 	}
 	h1{
 		font-size:50px;
@@ -43,12 +45,21 @@
 		font-family: 'Oswald', sans-serif;
 		color:#303030;
 	}
-	
+	h4{
+		margin-top:0px;
+		margin-bottom:10px;
+		font-size:20px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+	}
 	header{
 		background-color:#F0F0F0;
 	}
 	.container{
 		padding:0px;
+	}
+	.section-footer{
+		vertical-align:bottom;
 	}
 	.page-header{
 		color:#505050;
@@ -74,10 +85,15 @@
 		background-color:#505050;
 		color:white;
 	}
+	.date{
+		color:#A0A0A0;
+		padding-top: 20px;
+	}
 	</style>
     
   </head>
   <body>
+
 	<header class="header">
 	<div class="container">
 	
@@ -119,23 +135,41 @@
 	<!-- RECENT PROJECTS -->
 	<div class="section">
 		<h2><span class="glyphicon glyphicon-blackboard"></span>&nbsp;RECENT PROJECTS</h2>
-		
+		<hr></hr>
 		<div class="container" style="margins:0px; width:100%">
 		
-		<div class="col-md-5" style="padding:0px;"><img src="images/missiletap.png"></img></div>
-		
-		<div class="col-md-7">
-		<h3>MISSILE TAP</h3>
-		Missile Tap is a small game about shooting down missiles using your own missiles. This was developed in Unity and coded with C#. This game was inspired by Missile Command, an old arcade game. I disabled losing for the web version of this game.
-		<br><br>
-		Left click to launch interceptor missiles. Avoid enemy (red) missiles from landing.
-		<br><br>
-		<a href="game.html" class="btn">View project</a>
-		<a href="https://github.com/stevendinhton/missiletap" class="btn"><span class="glyphicon glyphicon-link"></span>&nbsp;View source code on GitHub</a>
+			<div class="col-md-5"><img src="images/missiletap.png" class="img-rounded"></img></div>
+			
+				<div class="col-md-7">
+				<h4>MISSILE TAP</h4>
+				<p>
+					Missile Tap is a small game about shooting down missiles using your own missiles. This was developed in Unity and coded with C#. This game was inspired by Missile Command, an old arcade game. I disabled losing for the web version of this game. Unfortunately the WebGL version runs more poorly (performance-wise) than the mobile app or standalone application.
+					</p>
+				<p>Left click to launch interceptor missiles. Avoid enemy (red) missiles from landing.</p>
+				<p class="date">2015-2016</p>
+				<a href="game.html" class="btn btn-sm">View project</a>
+				<a href="https://github.com/stevendinhton/missiletap" class="btn btn-sm"><span class="glyphicon glyphicon-link"></span>&nbsp;View source code on GitHub</a>
+				</div>
+			</div>
+		<hr></hr>
+
+		<div class="container" style="margins:0px; width:100%">
+			<div class="col-md-5"><img src="images/thiswebsite.png" class="img-rounded"></img></div>
+
+			<div class="col-md-7">
+				<h4>THIS WEBSITE</h4>
+				<p>
+				This portfolio website was built using <a href="http://getbootstrap.com/">Bootstrap</a> as a framework. You're looking at it right now.
+				</p>
+				<div>
+				<p class="date">September 2016</p>
+				<a href="index.html" class="btn btn-sm">View project</a>
+				<a href="https://github.com/stevendinhton/stevendinhton.github.io" class="btn btn-sm"><span class="glyphicon glyphicon-link"></span>&nbsp;View source code on GitHub</a>
+			</div>
+			</div>
 		</div>
-		<br><br><br><br><br><br>
-		</div>
-		
+		<hr></hr>
+
 	</div>
 	
 	</div>
@@ -232,6 +266,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/react.js"></script><script src="js/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
 	</div>
   </body>
 </html>

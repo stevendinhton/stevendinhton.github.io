@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>Custom Dice Simulator</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+	
+	<link rel="icon" href="images\favicon.png">
+	
+	<style>
+	
+	a{
+		color:#303030;
+	}
+	a:hover, a:focus, a:active{
+		color:#303030;
+	}
+	body{
+		font-family: 'PT Serif', serif;
+		font-size:15px;
+		background-color:#404040;
+	}
+	h1{
+		font-size:50px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+	}
+	h2{
+		font-size:25px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+		line-height:0px;
+	}
+	h3{
+		font-size:20px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+	}
+	h4{
+		margin-top:0px;
+		margin-bottom:10px;
+		font-size:20px;
+		font-family: 'Oswald', sans-serif;
+		color:#303030;
+	}
+	header{
+		background-color:#F0F0F0;
+	}
+	hr{
+		border-color:#D0D0D0;
+	}
+	.container{
+		padding:0px;
+	}
+	.section-footer{
+		vertical-align:bottom;
+	}
+	.page-header{
+		color:#505050;
+	}
+	.section{
+		background-color:#F7F7F7;
+		padding:20px;
+		margin-right:20px;
+		margin-top:20px;
+	}
+	.progress{
+		margin-bottom:10px;
+		background-color:#E0E0E0;
+	}
+	.progress-bar{
+		background-color:#303030;
+	}
+	.btn{
+		background-color:#303030;
+		color:white;
+	}
+	.btn:hover, .btn:active, .btn:focus{
+		background-color:#505050;
+		color:white;
+	}
+	.date{
+		color:#A0A0A0;
+		padding-top: 20px;
+	}
+	</style>
+    
+  </head>
+  <body>
+	
+	<div class="container">
+        <br/>
+        <div class="jumbotron" align="center">
+            <h3>Custom Dice Simulator</h3>
+            <div class="input-group">
+                <center>
+                <input class="form-control" style="width:100px;" placeholder="# of sides" id="num"></input>
+                <span class="input-group-btn">
+                    <button class="btn" type="button" onclick="rollDice()">Roll!</button>
+                </span>
+                </center>
+            </div>
+            <h1 id="result-output"></h1>
+            <div class="alert alert-danger" role="alert" id="alert" style="width:250px; padding:5px; display:none">Enter a valid positive integer</div>
+            <hr/>
+            <div align="right">
+            <a href="index.html" class="btn" style="align:right;">home</a>
+            </div>
+        </div>
+	</div>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/react.js"></script><script src="js/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+	<script src="js/dice.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+
+a{
+	color:#303030;
+}
+a:hover, a:focus, a:active{
+	color:#303030;
+}
+body{
+	font-family: 'PT Serif', serif;
+	font-size:15px;
+	background-color:#404040;
+}
+h1{
+	font-size:50px;
+	font-family: 'Oswald', sans-serif;
+	color:#303030;
+}
+h2{
+	font-size:25px;
+	font-family: 'Oswald', sans-serif;
+	color:#303030;
+	line-height:0px;
+}
+h3{
+	font-size:20px;
+	font-family: 'Oswald', sans-serif;
+	color:#303030;
+}
+h4{
+	margin-top:0px;
+	margin-bottom:10px;
+	font-size:20px;
+	font-family: 'Oswald', sans-serif;
+	color:#303030;
+}
+header{
+	background-color:#F0F0F0;
+}
+hr{
+	border-color:#D0D0D0;
+}
+.container{
+	padding:0px;
+}
+.smallcontainer{
+	margins:0px; 
+	width:100%
+}
+.section-footer{
+	vertical-align:bottom;
+}
+.page-header{
+	color:#505050;
+}
+.section{
+	background-color:#F7F7F7;
+	padding:20px;
+	margin-right:20px;
+	margin-top:20px;
+}
+.progress{
+	margin-bottom:10px;
+	background-color:#E0E0E0;
+}
+.progress-bar{
+	background-color:#303030;
+}
+.btn{
+	background-color:#303030;
+	color:white;
+}
+.btn:hover, .btn:active, .btn:focus{
+	background-color:#505050;
+	color:white;
+}
+.date{
+	color:#A0A0A0;
+	padding-top: 20px;
+}

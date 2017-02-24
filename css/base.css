@@ -8,7 +8,7 @@ a:hover, a:focus, a:active{
 body{
 	font-family: 'PT Serif', serif;
 	font-size:15px;
-	background-color:#404040;
+	background-color:#d4d4d4;
 }
 h1{
 	font-size:50px;
@@ -43,7 +43,7 @@ hr{
 	padding:0px;
 }
 .smallcontainer{
-	margins:0px; 
+	margins:0px;
 	width:100%
 }
 .section-footer{

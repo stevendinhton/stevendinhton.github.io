@@ -1,79 +1,56 @@
+html {
+	height: 100%;
+}
 
-a{
-	color:#303030;
+body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	background-color: #194f79;
+	overflow: hidden;
 }
-a:hover, a:focus, a:active{
-	color:#303030;
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
-body{
-	font-family: 'PT Serif', serif;
-	font-size:15px;
-	background-color:#d4d4d4;
+
+.canvas {
+  display: block;
+  vertical-align: bottom;
 }
-h1{
-	font-size:50px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
+
+.center-container {
+	background: #2d74ac;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
-h2{
-	font-size:25px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
-	line-height:0px;
+
+.name {
+	margin-top: -8rem;
+	font-size: 2.5rem;
+	color: white;
+	pointer-events: none;
+	transition: 1s;
 }
-h3{
-	font-size:20px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
+
+.name.projects-toggled {
+	margin-top: -8rem;
+	font-size: 2.5rem;
+	color: white;
+	pointer-events: none;
+	transition: 1s;
 }
-h4{
-	margin-top:0px;
-	margin-bottom:10px;
-	font-size:20px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
-}
-header{
-	background-color:#F0F0F0;
-}
-hr{
-	border-color:#D0D0D0;
-}
-.container{
-	padding:0px;
-}
-.smallcontainer{
-	margins:0px;
-	width:100%
-}
-.section-footer{
-	vertical-align:bottom;
-}
-.page-header{
-	color:#505050;
-}
-.section{
-	background-color:#F7F7F7;
-	padding:20px;
-	margin-right:20px;
-	margin-top:20px;
-}
-.progress{
-	margin-bottom:10px;
-	background-color:#E0E0E0;
-}
-.progress-bar{
-	background-color:#303030;
-}
-.btn{
-	background-color:#303030;
-	color:white;
-}
-.btn:hover, .btn:active, .btn:focus{
-	background-color:#505050;
-	color:white;
-}
-.date{
-	color:#A0A0A0;
-	padding-top: 20px;
+
+.button {
+
 }

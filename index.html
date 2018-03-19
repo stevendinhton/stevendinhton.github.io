@@ -27,14 +27,17 @@
 		<h1>Steven Dinhton Nguyen</h1>
 
 		<div class="col-lg-8" style="padding:0px">
-		Geomatics and Computer Science student at the University of Waterloo
+		Student at the University of Waterloo
 		</div>
 
 		<div class="col-lg-4" style="text-align: right">
-		<a href="documents\stevendinhton.pdf" class="btn btn-default" role="button">
-		<span class="glyphicon glyphicon-file"></span>
-		&nbsp;view resume
-		</a>
+      <a href="https://github.com/stevendinhton" class="btn btn-default" role="button">
+  		view GitHub
+  		</a>
+  		<a href="documents\stevendinhton.pdf" class="btn btn-default" role="button">
+  		<span class="glyphicon glyphicon-file"></span>
+  		&nbsp;view resume
+  		</a>
 		</div>
 
 		<br>
@@ -62,13 +65,28 @@
 		<h2><span class="glyphicon glyphicon-blackboard"></span>&nbsp;RECENT PROJECTS</h2>
 		<hr/>
 
+    <div class="container smallcontainer">
+			<div class="col-md-5"><img src="images/movement.png" class="img-rounded"></img></div>
+
+			<div class="col-md-7">
+				<h4>Social Media Web App</h4>
+				<p>Developed with Ruby on Rails, React.js, Bulma CSS framework, MySQL. Responsive web app allows for user creation, posts, and comments. Is responsive and can scale dynamically to lower resolutions.
+				</p>
+				<div>
+				<p class="date">April 2017</p>
+				<a href="https://github.com/stevendinhton/movement" class="btn btn-sm"><span class="glyphicon glyphicon-link"></span>&nbsp;View source code on GitHub</a>
+			</div>
+			</div>
+		</div>
+		<hr/>
+
 		<div class="container smallcontainer">
 			<div class="col-md-5"><img src="images/twitterbot.png" class="img-rounded"></img></div>
 
 			<div class="col-md-7">
-				<h4>MockingBirdBot - Twitter Bot</h4>
+				<h4>Twitter Bot</h4>
 				<p>
-				MockingBirdBot is a Twitter bot that uses a Markov chain to generate tweets based on specified users. Connects to the Twitter API to listen to tweets mentioning the bot, then replies by using a Markov chain to generate a tweet. Hosted on Heroku.
+				Twitter bot written in Python that uses a Markov chain to generate tweets based on specified users. Connects to the Twitter API to listen to tweets mentioning the bot, then replies by using a Markov chain to generate a tweet. Hosted on Heroku.
 				</p>
 				<div>
 				<p class="date">November 2016</p>
@@ -83,11 +101,10 @@
 			<div class="col-md-5"><img src="images/sreddit.png" class="img-rounded"></img></div>
 
 			<div class="col-md-7">
-				<h4>sREDDIT - reddit clone</h4>
+				<h4>Ruby on Rails Message Board</h4>
 				<p>
-				sREDDIT is a clone of reddit. Written in Ruby on Rails, using Bootstrap. Users may create posts and comment on them. No login required; everybody is anonymous. Hosted on Heroku. May take some time to load for the first time.
+				A clone of reddit, except everybody is anonymous. Written in Ruby on Rails, using Bootstrap. Users may create posts and comment on them. Hosted on Heroku. May take some time to load for the first time.
 				</p>
-				<p>Upcoming features to be added later: sub-sreddits, upvoting/downvoting, sorting comments</p>
 				<div>
 				<p class="date">October 2016</p>
 				<a href="http://sreddit.herokuapp.com" class="btn btn-sm">View project</a>
@@ -96,32 +113,16 @@
 			</div>
 		</div>
 		<hr/>
-		<div class="container smallcontainer">
-			<div class="col-md-5"><img src="images/dice.png" class="img-rounded"></img></div>
-
-			<div class="col-md-7">
-				<h4>CUSTOM DICE SIMULATOR</h4>
-				<p>
-				Custom Dice Roller written in simple JavaScript. Allows you to custom set the number of sides on the die and roll it.
-				</p>
-				<div>
-				<p class="date">September 2016</p>
-				<a href="dice.html" class="btn btn-sm">View project</a>
-				<a href="https://github.com/stevendinhton/customdiceroller" class="btn btn-sm"><span class="glyphicon glyphicon-link"></span>&nbsp;View source code on GitHub</a>
-			</div>
-			</div>
-		</div>
-		<hr></hr>
 
 		<div class="container smallcontainer">
 
 			<div class="col-md-5"><img src="images/missiletap.png" class="img-rounded"></img></div>
 
 				<div class="col-md-7">
-				<h4>MISSILE TAP</h4>
+				<h4>Unity3D/WebGL Missile Game</h4>
 				<p>
-					Missile Tap is a small game about shooting down missiles using your own missiles. This was developed in Unity and coded with C#. This game was inspired by Missile Command, an old arcade game. I disabled losing for the web version of this game. Unfortunately the WebGL version runs more poorly (performance-wise) than the mobile app or standalone application. I developed this on and off throughout a few months.
-					</p>
+					Game developed in Unity Engine, coded with C#, and built for WebGL (playable on browser). Implements physics and collision system. Game is about shooting down missiles using your own missiles. Game developed in Unity and coded with C#.
+				</p>
 				<p>Left click to launch interceptor missiles. Avoid enemy (red) missiles from landing.</p>
 				<p class="date">2015-2016</p>
 				<a href="game.html" class="btn btn-sm">View project</a>
@@ -172,82 +173,25 @@
 
 	<!-- SKILLS SECTION -->
 	<div class="section">
-		<h2><span class="glyphicon glyphicon-wrench"></span>&nbsp;SKILLS</h2>
-		<h3>Programming:</h3>
-		Ruby on Rails
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 90%;">
-		</div>
-		</div>
+		<h2><span class="glyphicon glyphicon-wrench"></span>&nbsp;EXPERIENCE</h2>
+		<h3>Full Stack Developer at Dejero Labs</h3>
+		<p>Sep - Dec 2017</p>
+    <p>• worked in an Agile environment, developing frontend and backend of Ruby on Rails web app</p>
+    <p>• used Slim, AngularJS, SASS for frontend and worked with MySQL and MongoDB databases</p>
+    <p>• used RabbitMQ to implement an emailer service</p>
+    <p>• developed a custom notification service for customers to be notified via email when their hardware exceeds their specified data threshold</p>
+    <p>• used Git for version control</p>
 
-    React.js
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 85%;">
-		</div>
-		</div>
+    <h3>Full Stack Developer at Cognitive Systems</h3>
+		<p>Jan - Apr 2017</p>
+    <p>• wrote entirely custom charts with tooltips and adjustable date ranges in D3.js for customers to visualize motion data over time in their home, was displayed on front page of web app</p>
+    <p>• worked on frontend and backend of Ruby on Rails web app in an Agile environment</p>
+    <p>• developed RESTful API used by both web and mobile app, wrote tests for backend using RSpec</p>
+    <p>• built responsive front-end using React.js, Slim, jQuery, SASS</p>
+    <p>• used Git for version control</p>
 
-    Java
-    <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 80%;">
-    </div>
-    </div>
+</p>
 
-		Racket / Scheme
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 78%;">
-		</div>
-
-		</div>JavaScript
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 75%;">
-		</div>
-		</div>
-
-		C / C++
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 73%;">
-		</div>
-		</div>
-
-		Python
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 70%;">
-		</div>
-		</div>
-
-		C#
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 60%;">
-		</div>
-		</div>
-
-		SQL
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 50%;">
-		</div>
-		</div>
-
-		<h3>Geomatics:</h3>
-
-		ArcGIS
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 82%;">
-		</div>
-		</div>
-
-		Cartography / Map Design
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 85%;">
-		</div>
-		</div>
-
-		<h3>Other:</h3>
-
-		Adobe Photoshop
-		<div class="progress">
-		<div class="progress-bar" role="progressbar" style="width: 94%;">
-		</div>
-		</div>
 
 	</div>
 	</div>

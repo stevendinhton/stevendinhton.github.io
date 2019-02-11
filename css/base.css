@@ -5,10 +5,9 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
-	background-color: #194f79;
-	overflow: hidden;
+	background-color: #eaeaea;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #particles-js {
@@ -19,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+	z-index: -1;
 }
 
 .canvas {
@@ -27,30 +27,84 @@ body {
 }
 
 .center-container {
-	background: #2d74ac;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: #eaeaeacc;
 	text-align: center;
+	font-weight: normal;
+	color: #505050;
+	margin: 4rem 1rem;
 }
 
 .name {
-	margin-top: -8rem;
-	font-size: 2.5rem;
-	color: white;
-	pointer-events: none;
-	transition: 1s;
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
 }
 
-.name.projects-toggled {
-	margin-top: -8rem;
-	font-size: 2.5rem;
-	color: white;
-	pointer-events: none;
-	transition: 1s;
+span {
+	font-weight: 600;
 }
 
-.button {
+a {
+	text-decoration: none;
+}
 
+i {
+	display: block;
+}
+
+.info-title-link, .info-title {
+	display: block;
+	font-weight: 600;
+	color: #505050;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.info-title-link:hover {
+	color: black;
+}
+
+.social {
+	font-size: 1rem;
+	margin-bottom: 3rem;
+}
+
+.information {
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.info-header {
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 1rem;
+}
+
+.info {
+	text-align: left;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
+	font-family: 'Lato', sans-serif;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.content {
+	grid-column: span 12;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 992px) {
+	.center-container {
+		margin: 10rem 15rem;
+	}
+	.name {
+		font-size: 2.5rem;
+		margin-bottom: 5rem;
+	}
+	.social {
+		font-size: 1.5rem;
+		margin-bottom: 5rem;
+	}
+	.content {
+		grid-column: span 4;
+	}
 }

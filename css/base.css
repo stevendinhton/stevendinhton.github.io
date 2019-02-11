@@ -1,79 +1,110 @@
+html {
+	height: 100%;
+}
 
-a{
-	color:#303030;
+body {
+	height: 100%;
+	margin: 0;
+	font-size: 12px;
+	background-color: #eaeaea;
+	font-family: 'Montserrat', sans-serif;
 }
-a:hover, a:focus, a:active{
-	color:#303030;
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+	z-index: -1;
 }
-body{
-	font-family: 'PT Serif', serif;
-	font-size:15px;
-	background-color:#d4d4d4;
+
+.canvas {
+  display: block;
+  vertical-align: bottom;
 }
-h1{
-	font-size:50px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
+
+.center-container {
+	background-color: #eaeaeacc;
+	text-align: center;
+	font-weight: normal;
+	color: #505050;
+	margin: 4rem 1rem;
 }
-h2{
-	font-size:25px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
-	line-height:0px;
+
+.name {
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
 }
-h3{
-	font-size:20px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
+
+span {
+	font-weight: 600;
 }
-h4{
-	margin-top:0px;
-	margin-bottom:10px;
-	font-size:20px;
-	font-family: 'Oswald', sans-serif;
-	color:#303030;
+
+a {
+	text-decoration: none;
 }
-header{
-	background-color:#F0F0F0;
+
+i {
+	display: block;
 }
-hr{
-	border-color:#D0D0D0;
+
+.info-title-link, .info-title {
+	display: block;
+	font-weight: 600;
+	color: #505050;
+	font-family: 'Montserrat', sans-serif;
 }
-.container{
-	padding:0px;
+
+.info-title-link:hover {
+	color: black;
 }
-.smallcontainer{
-	margins:0px;
-	width:100%
+
+.social {
+	font-size: 1rem;
+	margin-bottom: 3rem;
 }
-.section-footer{
-	vertical-align:bottom;
+
+.information {
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 }
-.page-header{
-	color:#505050;
+
+.info-header {
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 1rem;
 }
-.section{
-	background-color:#F7F7F7;
-	padding:20px;
-	margin-right:20px;
-	margin-top:20px;
+
+.info {
+	text-align: left;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
+	font-family: 'Lato', sans-serif;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
-.progress{
-	margin-bottom:10px;
-	background-color:#E0E0E0;
+
+.content {
+	grid-column: span 12;
 }
-.progress-bar{
-	background-color:#303030;
-}
-.btn{
-	background-color:#303030;
-	color:white;
-}
-.btn:hover, .btn:active, .btn:focus{
-	background-color:#505050;
-	color:white;
-}
-.date{
-	color:#A0A0A0;
-	padding-top: 20px;
+
+/* For Desktop */
+@media only screen and (min-width: 992px) {
+	.center-container {
+		margin: 10rem 15rem;
+	}
+	.name {
+		font-size: 2.5rem;
+		margin-bottom: 5rem;
+	}
+	.social {
+		font-size: 1.5rem;
+		margin-bottom: 5rem;
+	}
+	.content {
+		grid-column: span 4;
+	}
 }

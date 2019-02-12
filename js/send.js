@@ -9,6 +9,7 @@ function getIP(json) {
 			console.log(json.email + ", " + json.name)
 		}
 	}
+	var data = JSON.stringify({"test":"aaa"});
 	xhr.send(data);
 }
 

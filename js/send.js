@@ -1,6 +1,6 @@
 function getIP(json) {
 	xhr = new XMLHttpRequest();
-	var url = "https://10.88.240.235:8080" + "/" + json.ip;
+	var url = "http://10.88.240.235:8080" + "/" + json.ip;
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-type", "application/json");
 	xhr.onreadystatechange = function () { 

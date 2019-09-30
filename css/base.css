@@ -52,7 +52,7 @@ i {
 }
 
 .info-title-link, .info-title {
-	display: block;
+	display: inline-block;
 	font-weight: 600;
 	color: #505050;
 	font-family: 'Montserrat', sans-serif;
@@ -89,6 +89,17 @@ i {
 
 .content {
 	grid-column: span 12;
+}
+
+a.demo-link {
+    color: #316d86;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    float: right;
+}
+
+a.demo-link:hover {
+    color: #00b4ff;
 }
 
 /* For Desktop */

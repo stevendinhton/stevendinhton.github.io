@@ -7,6 +7,7 @@
 
     <title>Steven Dinhton Nguyen</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato|Montserrat:300,600" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="css/base.css">
   	<link rel="icon" href="images/favicon.png">
@@ -18,7 +19,7 @@
       <div class="name">
         Hi, I'm
         <span>Steven Nguyen,</span>
-        a University of Waterloo student.
+        a Software Developer.
       </div>
       <div class="social">
         <a href="https://www.linkedin.com/in/steven-nguyen-609484132/">LinkedIn</a>
@@ -27,68 +28,52 @@
         |
         <a href="documents/stevendinhton.pdf">Resume</a>
       </div>
-      <div class="information">
-        <div class="content">
-          <div class="info-header">PROJECTS</div>
-          <div class="info">
-            <a href="https://github.com/stevendinhton/twitter-sentiment" class="info-title-link">Sentiment Analysis App</a>
-            <a href="http://stevendinhton-client.us-east-2.elasticbeanstalk.com/" class="demo-link">View Live Demo</a>
-			<i>Sept. 2019</i>
-            Express API server to receive term and respond with sentiment analysis data from tweets, and a React frontend app to interact with backend Express server. Deployed via AWS Elastic Beanstalk.
+      <div class="projects">
+        <div class="row">
+          <div class="col-md-6 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <a href="https://torontolife-481.web.app/"><img src="images/card-gis.png" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Neighbourhood Preference Tool</h5>
+                <p class="card-text">GIS tool built with D3.js for determining most the suitable neighbourhood in Toronto based on census data. Built with three other developers.</p>
+              </div>
+            </div>
           </div>
-          <div class="info">
-            <a href="https://github.com/stevendinhton/sREDDIT" class="info-title-link">Anonymous Message Board</a>
-            <a href="http://sreddit.herokuapp.com/" class="demo-link">View Live Demo</a>
-			<i>Nov. 2016</i>
-            Reddit clone built on Rails. Allows users to create posts and comments.
+          <div class="col-md-6 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <a href="http://stevendinhton-client.us-east-2.elasticbeanstalk.com/"><img src="images/card-sentiment.png" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Twitter Sentiment Analysis</h5>
+                <p class="card-text">Sentiment analysis using data from tweets retrieved from Twitter API.</p>
+              </div>
+            </div>
           </div>
-          <div class="info">
-            <a href="https://github.com/stevendinhton/movement" class="info-title-link">Social Media Web App</a>
-            <i>Apr. 2018</i>
-            Developed with Ruby on Rails, React.js, Bulma CSS framework, MySQL. Responsive web app allows for user creation, posts, and comments. Is responsive and can scale dynamically to lower resolutions.
+          <div class="col-md-6 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <a href="https://stevendinhton.github.io/game.html"><img src="images/card-missile.png" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">2D Unity Missile Game</h5>
+                <p class="card-text">Developed in Unity and built for WebGL. Left click to launch interceptor missiles. Avoid enemy (red) missiles from landing.</p>
+              </div>
+            </div>
           </div>
-          <div class="info">
-            <a href="https://github.com/stevendinhton/mockingbird" class="info-title-link">Twitter Bot</a>
-            <i>Nov. 2016</i>
-            Twitter bot written in Python that uses a Markov chain to generate tweets based on specified users. Connects to the Twitter API to listen to tweets mentioning the bot, then replies by using a Markov chain to generate a tweet. Hosted on Heroku.
+          <div class="col-md-6 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <a href="http://sreddit.herokuapp.com/"><img src="images/card-reddit.png" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Message Board</h5>
+                <p class="card-text">Anonymous Message Board built on Rails. Allows users to create posts and comments.</p>
+              </div>
+            </div>
           </div>
-          <div class="info">
-            <a href="https://github.com/stevendinhton/missiletap" class="info-title-link">Unity3D/WebGL Missile Game</a>
-			<a href="https://stevendinhton.github.io/game.html" class="demo-link">View Live Demo</a>
-            <i>2015 - 2016</i>
-            Game developed in Unity Engine, coded with C#, and built for WebGL (playable on browser). Implements physics and collision system. Game is about shooting down missiles using your own missiles. Game developed in Unity and coded with C#.
-            Left click to launch interceptor missiles. Avoid enemy (red) missiles from landing.
-          </div>
-        </div>
-        <div class="content">
-          <div class="info-header">EXPERIENCE</div>
-          <div class="info">
-            <a href="https://www.phreesia.com/" class="info-title-link">Phreesia - Software Engineer Co-op</a>
-            <i>May 2018 – Aug. 2018</i>
-            Developed internal app to display paginated, sortable, filterable, and searchable customer records using .NET and Angular for company’s tech support department. Worked with partner to build internal tool for creating and saving questionnaires with conditional logic. Built with Node, Mongo, Angular. Wrote integration and unit tests for .NET apps.          </div>
-          <div class="info">
-            <a href="https://www.dejero.com/" class="info-title-link">Dejero - Full Stack Co-op</a>
-            <i>Sep. 2017 – Dec. 2017</i>
-            Developed customizable notification feature with team to allow customers to specify data usage thresholds to be notified when their streaming hardware exceeds their set threshold. Used RabbitMQ to implement an emailer service to notify customers. Developed web app to allow for customers to manage their video streaming hardware using Rails, AngularJS, MongoDB.
-          </div>
-          <div class="info">
-            <a href="https://www.cognitivesystems.com/" class="info-title-link">Cognitive Systems - Full Stack Co-op</a>
-            <i>Jan. 2017 – Apr. 2017</i>
-            Worked on app for owners of a home monitoring system to manage their security devices, customize settings, and view motion statistics. Created and optimized API which both web and mobile apps relied on to receive interpreted and summarized motion data over specified time periods. Wrote tests for Rails backend using RSpec, and reached 90% code coverage. In addition, I created entirely custom data visualization with adjustable date ranges in D3.js for customers to visualize motion data, and it was displayed on front page of web app of home monitoring system.          </div>
-        </div>
-        <div class="content">
-          <div class="info-header">SKILLS AND TECHNOLOGY</div>
-          <div class="info">
-            <div class="info-title">Frameworks/Libraries</div>
-            Ruby on Rails, .NET, Node.js, RabbitMQ, React, Angular, D3.
-          </div>
-          <div class="info">
-            <div class="info-title">Languages</div>
-            Ruby, JavaScript, Java, Python, C#, C
-          </div>
-          <div class="info">
-            <div class="info-title">Other</div>
-            Bash, Git, agile, code reviews, JIRA, Bamboo, Trello, writing unit tests.
+          <div class="col-md-6 col-xl-4">
+            <div class="card" style="width: 18rem;">
+              <a href="https://github.com/stevendinhton"><img src="images/card-other.png" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Other Side Projects</h5>
+                <p class="card-text">View my other side projects on GitHub!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
